@@ -241,8 +241,10 @@ body {
     }
 
     .expand:hover {
+        transition: all 500ms;
         transform: scale(1.05);
     }
+
 }
 
 @media (min-width: 1471px) and (max-width: 1550px) {
