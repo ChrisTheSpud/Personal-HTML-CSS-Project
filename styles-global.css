@@ -125,7 +125,7 @@ body {
   .container {
     gap: 2.56rem;
     padding: 2.56rem 3.12rem 0 3.12rem;
-    margin: 0 12.5rem 0 12.5rem;
+    margin: 0 6.25rem 0 6.25rem;
   }
 
   .headings {
@@ -146,7 +146,13 @@ body {
   }
 }
 
-@media (min-width: 1471px) and (max-width: 1550px) {
+@media (min-width: 1770px) {
+  .container {
+    margin: 0 12.5rem 0 12.5rem;
+  }
+}
+
+@media (min-width: 1471px) and (max-width: 1515px) {
   .paragraph-style {
       font-size: 1.6rem; 
   }
