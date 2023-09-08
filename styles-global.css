@@ -82,6 +82,10 @@ body {
   box-sizing: border-box;
 }
 
+#notextdeco {
+  text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
       background: #0B1D27; 
@@ -132,7 +136,6 @@ body {
 
   .paragraph-style {
     font-size: 1.875rem; 
-    width: auto;
     max-height: 100%;
     margin: auto 5rem auto auto;
     width: 100%;
@@ -140,5 +143,11 @@ body {
 
   .credits {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1471px) and (max-width: 1550px) {
+  .paragraph-style {
+      font-size: 1.6rem; 
   }
 }
