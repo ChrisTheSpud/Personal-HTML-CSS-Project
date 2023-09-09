@@ -19,6 +19,8 @@
     object-fit: cover;
     margin: 0 auto 0 auto;
 }
+
+@media (min-width: 1515px) {
     .rows {
         display: flex;
         flex-direction: row;
@@ -52,3 +54,4 @@
         width: 100%;
         height: auto;
     }
+}
