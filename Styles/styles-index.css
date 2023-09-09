@@ -66,6 +66,10 @@
         border-radius: 2.5rem; 
     }
 
+    :is(.image3, .image4) {
+        margin-block-end: 0rem;
+    }
+
     .image1 {
         margin: 0;
         max-width: 40rem;
@@ -86,6 +90,10 @@
         max-height: 42rem;
         max-width: 40rem;
         margin: 0;
+    }
+
+    .image10 {
+        margin-block-end: 1rem;
     }
 
     .cards {

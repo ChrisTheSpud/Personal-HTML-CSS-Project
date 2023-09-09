@@ -23,7 +23,7 @@
 
 .image2 {
     height: 17rem;
-    margin: 1rem auto 1rem auto;
+    margin: 1rem auto auto auto;
 }
 
 :is(.image3, .image4, .image5) {
@@ -94,6 +94,7 @@
     .image2 {
         height: 100%;
         width: 100%;
+        margin-block-start: 2.56rem;
     }
 
     .grid-row {

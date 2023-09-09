@@ -163,6 +163,10 @@ body {
   display: block;
 }
 
+#no-margin {
+  margin: auto auto 0 auto;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
       background: #0B1D27; 
@@ -282,7 +286,7 @@ body {
   }
 }
 
-@media (min-width: 1471px) and (max-width: 1515px) {
+@media (min-width: 1471px) and (max-width: 1560px) {
   .paragraph-style {
       font-size: 1.6rem; 
   }
