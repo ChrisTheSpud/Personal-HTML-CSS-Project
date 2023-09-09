@@ -227,7 +227,8 @@ body {
   }
 
   .paragraph-style {
-    font-size: 25px; 
+    font-size: 2rem; 
+    line-height: 2.5rem;
     max-height: 100%;
     margin: auto 5rem auto auto;
     width: 100%;
