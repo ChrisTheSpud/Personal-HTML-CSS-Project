@@ -1,7 +1,7 @@
 @import url(styles-global.css);
 
 .header-item {
-    background-image: url(.../Index-Assets/header-image.jpg);
+    background-image: url(../Index-Assets/header-image.jpg);
 }
 
 .header-text {
