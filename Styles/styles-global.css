@@ -6,6 +6,12 @@ body {
     margin: 0 auto;
 }
 
+#topButton {
+  display: none;
+  position: absolute;
+  color: transparent;
+}
+
 .header-item {
   background-position: center;
   background-repeat: no-repeat;
@@ -244,7 +250,7 @@ body {
   }
  
   .secondlink {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
   }
 
   #topButton {
