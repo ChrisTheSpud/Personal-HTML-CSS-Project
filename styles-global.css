@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30vh;
+  height: 50vh;
   margin: 0;
   box-sizing: content-box;
 }
@@ -26,6 +26,7 @@ body {
 
 .header-text {
   display: flex;
+  width: auto;
   justify-content: center;
   text-align: center;
   text-transform: uppercase;
@@ -33,13 +34,10 @@ body {
   font-size: 2.19rem; 
   font-weight: 700; 
   color: #FFF;
-  margin: 0;
-  position: relative;
-  inset-block-start: 35%;
+  margin: 0 auto auto auto;
+  position: absolute;
+  inset-block-start: 20%;
   user-select: none;
-  margin-block-end: auto;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
   inset-inline-start: 0;
   inset-inline-end: 0;
 }
@@ -86,6 +84,79 @@ body {
   text-decoration: none;
 }
 
+.navbar {
+  height: 30vh;
+  width: auto;
+  font-family: Montserrat;
+  overflow: hidden;
+  float: right;
+  margin: 0;
+  padding-block-start: 0.75rem;
+  padding-inline-end: 0.25rem;
+}
+
+.firstlink {
+  float: left;
+  color: #FFF;
+  font-size: 0.94rem;
+  font-weight: 600; 
+  padding: 0.9rem 1rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+.padding-dropdown {
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+.secondlink {
+  float: left;
+  color: #FFF;
+  font-weight: 600; 
+  padding: 0.31rem 1rem;
+  text-decoration: none;
+  margin: 0;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin: 0;
+}
+
+:is(.dropdown .dropbutton) {
+  font-size: 0.94rem;
+  font-weight: 600; 
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #FFF;
+  padding: 0.9rem 1rem;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.dropdown-content {
+  font-size: 0.625rem; 
+  display: none;
+  position: absolute;
+  border-radius: 1.25rem;
+  background: rgba(11, 29, 39, 0.40); 
+  z-index: 1;
+}
+
+:is(.dropdown-content a) {
+  float: none;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
       background: #0B1D27; 
@@ -104,6 +175,20 @@ body {
   }
 }
 
+@media (min-width:771px) {
+  :is(.firstlink, .dropdown .dropbutton) {
+    font-size: 1.40rem;
+  }
+
+  .dropdown-content {
+    font-size: 0.75rem;
+  }
+
+  .header-text {
+    font-size: 3rem;
+  }
+}
+
 @media (min-width: 1515px) {
   .header-item {
       height: 100vh;
@@ -119,6 +204,7 @@ body {
 
   .header-text {
     width: auto;
+    inset-block-start: 40%;
     font-size: 6.25rem; 
   }
 
@@ -143,6 +229,22 @@ body {
 
   .credits {
     font-size: 1rem;
+  }
+
+  :is(.firstlink, .dropdown .dropbutton) {
+    font-size: 1.60rem;
+  }
+
+  .dropdown-content {
+    font-size: 1.60rem;
+  }
+
+  :is(.dropdown .dropbutton) {
+    padding: 0.9rem 3.14rem;
+  }
+ 
+  .secondlink {
+    padding: 1rem 2rem 1rem 2rem;
   }
 }
 
