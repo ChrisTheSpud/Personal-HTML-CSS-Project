@@ -17,8 +17,7 @@
     width: 92vw;
     border-radius: 1.25rem;
     object-fit: cover;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    margin-inline: auto;
 }
 
 .image2 {
@@ -31,31 +30,20 @@
     height: 95%;
     border-radius: 1.25rem;
     object-fit: cover;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    margin-inline: auto;
 }
 
-:is(.stacked1, .stacked2, .stacked3) {
+.stacked {
     display: grid;
     place-items: center;
 }
 
-.stacked1 > * {
+.stacked > * {
     grid-column: 1/-1;
     grid-row: 1/-1;
 }
 
-.stacked2 > * {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-}
-
-.stacked3 > * {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-}
-
-:is(.stacked1, .stacked2, .stacked3) > :is(.image3, .image4, .image5) {
+.stacked1 > :is(.image3, .image4, .image5) {
     z-index: -1;
 }
 
